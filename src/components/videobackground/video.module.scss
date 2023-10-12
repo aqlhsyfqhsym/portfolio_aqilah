@@ -1,0 +1,16 @@
+.headerDesc {
+  width: 70%;
+  line-height: 40px;
+  letter-spacing: 10px;
+
+  p {
+    font-size: 34px;
+    letter-spacing: 13px;
+  }
+}
+
+.contactIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

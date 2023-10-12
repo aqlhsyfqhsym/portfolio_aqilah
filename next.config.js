@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
+const withImages = require("next-images");
 
-module.exports = nextConfig
+module.exports = withImages({
+  fileExtensions: ["mp4"], // Add any other file extensions you need
+});

@@ -1,12 +1,11 @@
-import { InstagramIcon, BehanceIcon, DribbbleIcon } from "@/components/icons";
+import {
+  InstagramIcon,
+  BehanceIcon,
+  DribbbleIcon,
+  LinkedInIcon,
+} from "@/components/icons";
 
 const ContactInfo = [
-  {
-    info: {
-      icon: <InstagramIcon />,
-      link: "/",
-    },
-  },
   {
     info: {
       icon: <BehanceIcon />,
@@ -15,7 +14,19 @@ const ContactInfo = [
   },
   {
     info: {
+      icon: <LinkedInIcon />,
+      link: "/",
+    },
+  },
+  {
+    info: {
       icon: <DribbbleIcon />,
+      link: "/",
+    },
+  },
+  {
+    info: {
+      icon: <InstagramIcon />,
       link: "/",
     },
   },

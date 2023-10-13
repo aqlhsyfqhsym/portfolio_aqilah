@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007aff; /* iOS blue color */
+  background-color: #e5e5ea; /* iOS light gray background */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  span {
+    font-size: 12px;
+    letter-spacing: 8px;
+    text-align: center;
+  }
+}

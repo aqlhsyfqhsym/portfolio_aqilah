@@ -1,18 +1,39 @@
 .button {
   display: inline-block;
   padding: 12px 20px;
-  border: none;
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
-  color: #007aff; /* iOS blue color */
-  background-color: #e5e5ea; /* iOS light gray background */
+  color: #cacaca; /* iOS blue color */
+  background-color: rgba(var(--callout-rgb), 0.5);
+  transition: all 0.5s;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
 
   span {
-    font-size: 12px;
-    letter-spacing: 8px;
-    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+    &:after {
+      content: "\2665";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover {
+    span {
+      padding-right: 25px;
+
+      &:after {
+        opacity: 1;
+        right: 0;
+      }
+    }
   }
 }

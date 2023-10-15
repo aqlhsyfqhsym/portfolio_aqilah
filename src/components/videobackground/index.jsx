@@ -12,7 +12,7 @@ export default function VideoSection() {
       <video src={BackgroundVideo} autoPlay loop muted />
       <div className={styles.headerDesc}>
         <p> AQILAH SYAFIQAH </p>
-        <span>Malaysia</span>
+        <span>Shah Alam City, MY</span>
         <div className={styles.contactIcon}>
           {ContactInfo.map(({ info }, index) => (
             <IconList key={index} icon={info.icon} link={info.link} />

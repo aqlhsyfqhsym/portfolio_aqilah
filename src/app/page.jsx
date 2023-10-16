@@ -14,6 +14,7 @@ export default function Home() {
   };
   return (
     <main className={styles.main}>
+      <div className={styles.stickyText}> aqilah syafiqah</div>
       <VideoBg />
       <Intro>
         <Button label="explore me" onClick={handleScroll} />

@@ -1,6 +1,4 @@
 import React from "react";
-import IconList from "@/components/contactList";
-import ContactInfo from "@/data/contact";
 
 import styles from "./video.module.scss";
 
@@ -13,11 +11,6 @@ export default function VideoSection() {
       <div className={styles.headerDesc}>
         <p> AQILAH SYAFIQAH </p>
         <span>Shah Alam City, MY</span>
-        <div className={styles.contactIcon}>
-          {ContactInfo.map(({ info }, index) => (
-            <IconList key={index} icon={info.icon} link={info.link} />
-          ))}
-        </div>
       </div>
     </div>
   );

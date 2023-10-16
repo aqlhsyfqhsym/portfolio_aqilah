@@ -1,3 +1,23 @@
 .wrapper {
   //   margin: auto;
+  padding: 20px 30px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 22px;
+  }
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 20px 0px;
 }

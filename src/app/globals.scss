@@ -146,3 +146,33 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 }
+
+.container-parallax {
+  height: 100vh;
+  width: 100%;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  /* Define your dual-gradient background */
+  background: linear-gradient(0deg, #c3c3c2, #171717, #000000);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s infinite;
+
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

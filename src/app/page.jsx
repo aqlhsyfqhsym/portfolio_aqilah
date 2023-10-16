@@ -3,6 +3,7 @@ import Image from "next/image";
 import VideoBg from "../components/videobackground";
 import Intro from "../components/intro";
 import AboutMe from "../components/aboutme";
+import Parallax from "../components/parallax";
 import Button from "../components/button";
 
 import styles from "./page.module.scss";
@@ -21,7 +22,9 @@ export default function Home() {
       </Intro>
 
       <div id="target-section"></div>
+
       <AboutMe />
+      <Parallax />
     </main>
   );
 }
